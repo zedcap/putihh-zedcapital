@@ -163,3 +163,12 @@
   object-fit: cover;
   display: block;
 }
+
+/* Change 11: mobile footer band. The theme's 767px rule (brixey-responsive.css)
+   drops .brxy-footer to 30px top / 5px bottom, so the logo sat almost on the
+   band's edges. Even 48px above and below at phone widths; desktop untouched. */
+@media screen and (max-width: 767px) {
+  .brxy-footer {
+    padding: 48px 0 48px;
+  }
+}
