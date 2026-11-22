@@ -211,3 +211,9 @@ footer .flogo { width: clamp(110px, 10vw, 136px); height: auto; margin-bottom: 1
 
 /* portfolio, desktop: the break after the intro is one deliberate gap, not two stacked paddings */
 @media (min-width: 1024px) { .portfolio { padding-top: 40px; } }
+
+/* phone: lift the logo clear of the roofline, quote block unchanged (padding comes off the top, goes onto the logo-to-quote gap) */
+@media (max-width: 767.98px) {
+  .cover .wrap { padding-top: calc(clamp(40px, 7svh, 72px) - 3.6svh); }
+  .cover .mark { margin-bottom: calc(clamp(28px, 5.5svh, 56px) + 3.6svh); }
+}
